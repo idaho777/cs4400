@@ -1,20 +1,14 @@
-import java.awt.Color;
-import java.awt.Graphics;
+package Panels;
 
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-
+import java.awt.*;
+import javax.swing.*;
 
 public class FixedPanel extends JPanel{
-	FixedPanel(){
+	public FixedPanel(){
 		setSize(450,100);
 		setVisible(true);
 		ImageIcon pic = new ImageIcon("pet.png");
 		JLabel l = new JLabel();
-		l.add(pic);
 		
 		
 	}

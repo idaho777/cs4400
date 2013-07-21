@@ -1,20 +1,16 @@
 import javax.swing.JFrame;
+import Panels.*;
 
-
-public class mainPet {
-
+public class mainPet extends JFrame{
 	public static void main(String[] args) {
-		JFrame f = new JFrame();
-		f.setSize(450,450);
-		FixedPanel fp = new FixedPanel();
-		f.add(fp);
-		f.pack();
-		f.setVisible(true);
+		JFrame frame = new JFrame("Atlanta Pet Adoption");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setResizable(false);
 		
+		LoginPanel login = new LoginPanel(frame);
 		
-		
-		
-
+		frame.getContentPane().add(login);
+		frame.pack();
+		frame.setVisible(true);
 	}
-
 }
